@@ -1,7 +1,8 @@
 # Crear clase (en Mayus)
 class Equipo:
     #definir __init__, con un self, para hacer referencia a si mismo, y luego los atributos
-    def __init__(self, nombre, ciudad, campeonatos, sponsor):
+    #definir tipo de dato (para ayudar luego en el main)
+    def __init__(self, nombre:str, ciudad:str, campeonatos, sponsor):
         #self.__ (atributo privado) 
         self.__nombre = nombre
         self.__ciudad = ciudad
@@ -52,5 +53,5 @@ class Equipo:
     def mostrar_datos(self):
         txt = ""
         txt += "Nombre:"+self.__nombre
-        txt += "Ciudad:"+self.__ciudad
+        txt += "\nCiudad:"+self.__ciudad
         return txt
