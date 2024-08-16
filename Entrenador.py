@@ -1,0 +1,1 @@
+#herencia (nombre, nacionalidad)

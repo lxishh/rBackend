@@ -55,3 +55,16 @@ class Equipo:
         txt += "Nombre:"+self.__nombre
         txt += "\nCiudad:"+self.__ciudad
         return txt
+    
+    #funciónes para la clase Jugador (objeto)
+    def contratar_jugadores(self,jugador):
+        if jugador in self.__jugadores:
+            print("El jugador ya está contratado")
+        else:
+            self.__jugadores.append(jugador)
+
+    def despedir_jugador(self,jugador):
+        if jugador not in self.__jugadores:
+            print("El jugador no está en el equipo")
+        else:
+            self.__jugadores.remove(jugador)
